@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =7
+let g:netrw_dirhist_7='/Users/bl406k/Projects/wayfair/codebase/php'
+let g:netrw_dirhist_6='/Users/bl406k/Projects/wayfair/codebase'
+let g:netrw_dirhist_5='/Users/bl406k/Projects/wayfair'
+let g:netrw_dirhist_4='/Users/bl406k/Projects/wayfair/k8s-application-registry'
+let g:netrw_dirhist_3='/Users/bl406k/Projects/wayfair'
+let g:netrw_dirhist_2='/Users/bl406k/Projects/wayfair/codebase'
+let g:netrw_dirhist_1='/Users/bl406k/Projects/wayfair/codebase/php'
+let g:netrw_dirhist_0='/Users/bl406k/Projects/wayfair/codebase'
+let g:netrw_dirhist_9='/Users/bl406k/Projects/wayfair/codebase/php'
+let g:netrw_dirhist_8='/Users/bl406k/Projects/wayfair/codebase/php/admin/jobs'
