@@ -3,6 +3,7 @@ let g:autofmt_autosave = 1
 
 syntax on
 colorscheme darcula
+set autoindent
 
 " Show relative line numbers with the current active line as the absolute line
 " number
@@ -21,3 +22,7 @@ set tabstop=4
 
 " Airline
 let g:airline_powerline_fonts = 1
+
+" Use the system clipboard so you can copy in vim and Cmd+V paste in other
+" programs
+set clipboard=unnamed
