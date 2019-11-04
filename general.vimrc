@@ -18,7 +18,6 @@ augroup END
 set list
 set listchars=space:.,tab:>-
 highlight NonText ctermfg=0
-set tabstop=4
 
 " Airline
 let g:airline_powerline_fonts = 1
@@ -26,3 +25,13 @@ let g:airline_powerline_fonts = 1
 " Use the system clipboard so you can copy in vim and Cmd+V paste in other
 " programs
 set clipboard=unnamed
+
+" Turn file type specific config on.
+filetype plugin indent on
+
+" show existing tab with 4 spaces width
+set tabstop=4
+" when indenting with '>', use 4 spaces width
+set shiftwidth=4
+" On pressing tab, insert 4 spaces
+set expandtab
