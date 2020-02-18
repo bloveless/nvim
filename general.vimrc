@@ -16,7 +16,7 @@ augroup END
 
 " Show hidden characters
 set list
-set listchars=space:.,tab:>-
+set listchars=space:.,tab:▸\ 
 highlight NonText ctermfg=0
 
 " Airline

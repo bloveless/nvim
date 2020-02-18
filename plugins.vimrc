@@ -30,6 +30,9 @@ Plug 'tpope/vim-fugitive'
 " Surround text with
 Plug 'tpope/vim-surround'
 
+" Go plugin
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+
 " Initialize plugin system
 call plug#end()
 
