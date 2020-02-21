@@ -1,3 +1,5 @@
+let mapleader=" "
+
 " Autoformat on save
 let g:autofmt_autosave = 1
 
