@@ -8,6 +8,7 @@ set smartindent
 set number
 set relativenumber
 set nowrap
+set ignorecase
 set smartcase
 set noswapfile
 set nobackup
