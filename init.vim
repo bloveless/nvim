@@ -50,6 +50,6 @@ set list
 set listchars=tab:>-,space:.,trail:~,extends:>,precedes:< "eol:$
 
 " Show fuzzy finder on ctrl-p
-nmap <C-P> :FZF<CR>
+nmap <C-P> :Rg<CR>
 
 source ~/.config/nvim/coc.vim
