@@ -55,9 +55,6 @@ set listchars=tab:>-,space:.,trail:~,extends:>,precedes:< "eol:$
 " Show fuzzy finder on ctrl-p
 nmap <C-P> :Rg<CR>
 
-" Organize golang imports on save
-autocmd BufWritePre *.go :call CocAction('runCommand', 'editor.action.organizeImport')
- 
 " disable vim-go :GoDef short cut (gd)
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
