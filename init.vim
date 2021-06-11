@@ -14,6 +14,7 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats'
+Plug 'tpope/vim-obsession'
 
 " Fuzzy search (you must manually install ripgrep aswell)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
