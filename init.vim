@@ -61,4 +61,10 @@ nmap <C-P> :Rg<CR>
 " this is handled by LanguageClient [LC]
 let g:go_def_mapping_enabled = 0
 
+" Automatically trim trailing whitespace on save
+" if there are any issues with this (I.E. files that need trailing whitespace)
+" consider this link https://vim.fandom.com/wiki/Remove_unwanted_spaces for
+" solutions
+autocmd BufWritePre * :%s/\s\+$//e
+
 source ~/.config/nvim/coc.vim
