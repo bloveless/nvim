@@ -15,6 +15,7 @@ Plug 'yuezk/vim-js'
 Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats'
 Plug 'tpope/vim-obsession'
+Plug 'tpope/vim-commentary'
 
 " Fuzzy search (you must manually install ripgrep aswell)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
