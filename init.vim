@@ -16,6 +16,7 @@ Plug 'maxmellon/vim-jsx-pretty'
 Plug 'HerringtonDarkholme/yats'
 Plug 'tpope/vim-obsession'
 Plug 'tpope/vim-commentary'
+Plug 'tpope/vim-unimpaired'
 
 " Fuzzy search (you must manually install ripgrep aswell)
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
@@ -34,9 +35,6 @@ colorscheme gruvbox
 
 " Hybrid line numbers
 set number relativenumber
-
-" Always show the tab bar
-set showtabline=2
 
 " Enable powerline fonts for airline
 let g:airline_powerline_fonts = 1
@@ -66,5 +64,13 @@ let g:go_def_mapping_enabled = 0
 " consider this link https://vim.fandom.com/wiki/Remove_unwanted_spaces for
 " solutions
 autocmd BufWritePre * :%s/\s\+$//e
+
+" Open new splits on the right and below the current buffer by default
+set splitright
+set splitbelow
+
+" Set search to use case sensitive queries only if the user provides cases
+set ignorecase
+set smartcase
 
 source ~/.config/nvim/coc.vim
