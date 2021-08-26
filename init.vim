@@ -55,10 +55,6 @@ set listchars=tab:>-,space:.,trail:~,extends:>,precedes:< "eol:$
 " Show fuzzy finder on ctrl-p
 nmap <C-P> :Rg<CR>
 
-" disable vim-go :GoDef short cut (gd)
-" this is handled by LanguageClient [LC]
-let g:go_def_mapping_enabled = 0
-
 " Automatically trim trailing whitespace on save
 " if there are any issues with this (I.E. files that need trailing whitespace)
 " consider this link https://vim.fandom.com/wiki/Remove_unwanted_spaces for
@@ -69,8 +65,9 @@ autocmd BufWritePre * :%s/\s\+$//e
 set splitright
 set splitbelow
 
+source ~/.config/nvim/coc.vim
+
 " Set search to use case sensitive queries only if the user provides cases
 set ignorecase
 set smartcase
 
-source ~/.config/nvim/coc.vim
