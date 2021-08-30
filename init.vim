@@ -24,6 +24,8 @@ Plug 'junegunn/fzf.vim'
 
 Plug 'fatih/vim-go'
 
+Plug 'justinmk/vim-sneak'
+
 " Initialize plugin system
 call plug#end()
 
