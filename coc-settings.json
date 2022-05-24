@@ -10,5 +10,6 @@
       "filetypes": ["rust"],
       "rootPatterns": ["Cargo.toml"]
     }
-  }
+  },
+  "python.jediEnabled": false
 }
