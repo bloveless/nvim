@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 
 require('plugins')
 require('user.cmp')
+require('user.mason')
 require('user.lspconfig')
 require('user.go')
 require('user.telescope')
@@ -17,6 +18,9 @@ vim.cmd "colorscheme gruvbox"
 -- Hybrid line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.signcolumn = "number"
+
+-- Show diagnostic and git changes in the number gutter instead of its own custom gutter
 vim.opt.signcolumn = "number"
 
 -- Enable powerline fonts for airline

@@ -13,6 +13,9 @@ vim.cmd([[
   augroup end
 ]])
 
+-- Only required if you have packer configured as `opt`
+vim.cmd [[packadd packer.nvim]]
+
 require('packer').startup(function(use)
   -- Packer can manage itself
   use 'wbthomason/packer.nvim'
@@ -21,6 +24,7 @@ require('packer').startup(function(use)
 
   -- golang
   use { 'fatih/vim-go', run = ':GoUpdateBinaries' }
+  -- use 'ray-x/go.nvim'
 
   -- fancy icons
   use 'kyazdani42/nvim-web-devicons'
@@ -36,6 +40,9 @@ require('packer').startup(function(use)
   }
 
   use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
+  use 'williamboman/mason.nvim'
+  use 'williamboman/mason-lspconfig.nvim'
+  use 'WhoIsSethDaniel/mason-tool-installer.nvim'
   use 'neovim/nvim-lspconfig'
 
   -- Auto-completion
