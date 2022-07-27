@@ -17,6 +17,7 @@ vim.cmd "colorscheme gruvbox"
 -- Hybrid line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
+vim.opt.signcolumn = "number"
 
 -- Enable powerline fonts for airline
 vim.g.airline_powerline_fonts = 1
@@ -29,7 +30,7 @@ vim.opt.softtabstop = 4
 
 -- Show whitespace characters
 vim.opt.list = true
-vim.opt.listchars = {tab = '>-', space = '.', trail = '~', extends = '>'}
+vim.opt.listchars = {tab = '>-', lead = '.', trail = '~', precedes = '<', extends = '>'}
 
 -- Automatically trim trailing whitespace on save
 -- if there are any issues with this (I.E. files that need trailing whitespace)
