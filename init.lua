@@ -3,6 +3,7 @@ vim.g.mapleader = ' '
 
 require('plugins')
 require('user.cmp')
+require('user.mason')
 require('user.lspconfig')
 require('user.go')
 require('user.telescope')
