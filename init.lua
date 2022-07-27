@@ -7,6 +7,7 @@ require('user.mason')
 require('user.lspconfig')
 require('user.go')
 require('user.telescope')
+require('user.lualine')
 
 if vim.fn.has("termguicolors") == 1 then
   vim.opt.termguicolors = true
@@ -41,6 +42,8 @@ vim.opt.listchars = {tab = '>-', lead = '.', trail = '~', precedes = '<', extend
 -- consider this link https://vim.fandom.com/wiki/Remove_unwanted_spaces for
 -- solutions
 vim.cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
+
+vim.keymap.set('n', '<leader>pv', '<cmd>Explore<cr>')
 
 -- Open new splits on the right and below the current buffer by default
 vim.opt.splitright = true

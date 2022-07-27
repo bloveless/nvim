@@ -59,5 +59,12 @@ require('packer').startup(function(use)
   use 'tpope/vim-surround'
   use 'tpope/vim-obsession'
   use 'tpope/vim-commentary'
+
+  use 'editorconfig/editorconfig-vim'
+
+  use {
+    'nvim-lualine/lualine.nvim',
+    requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+  }
 end)
 
