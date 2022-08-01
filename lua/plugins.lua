@@ -67,6 +67,9 @@ require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
+  use 'folke/tokyonight.nvim'
+  use 'fladson/vim-kitty'
+
   use '~/Projects/notical.nvim'
 end)
 

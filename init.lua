@@ -15,7 +15,8 @@ if vim.fn.has("termguicolors") == 1 then
 end
 
 vim.opt.syntax = "enable"
-vim.cmd "colorscheme gruvbox"
+-- vim.cmd "colorscheme gruvbox"
+vim.cmd "colorscheme tokyonight"
 
 -- Hybrid line numbers
 vim.opt.number = true
@@ -55,4 +56,9 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 vim.keymap.set('n', '<leader><leader>x', SaveAndExec)
+
+-- Global status bar
+vim.opt.laststatus = 3
+-- Show the current filename and modified status at the top right of the window
+vim.opt.winbar = '%=%m %f'
 
