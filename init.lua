@@ -2,12 +2,13 @@
 vim.g.mapleader = ' '
 
 require('plugins')
-require('user.cmp')
-require('user.mason')
-require('user.lspconfig')
-require('user.go')
-require('user.telescope')
-require('user.lualine')
+require('brennon.globals')
+require('brennon.cmp')
+require('brennon.mason')
+require('brennon.lspconfig')
+require('brennon.go')
+require('brennon.telescope')
+require('brennon.lualine')
 
 if vim.fn.has("termguicolors") == 1 then
   vim.opt.termguicolors = true
@@ -52,4 +53,6 @@ vim.opt.splitbelow = true
 -- Set search to use case sensitive queries only if the user provides cases
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
+
+vim.keymap.set('n', '<leader><leader>x', SaveAndExec)
 
