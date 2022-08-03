@@ -9,14 +9,15 @@ require('brennon.lspconfig')
 require('brennon.go')
 require('brennon.telescope')
 require('brennon.lualine')
+require('brennon.notical')
 
 if vim.fn.has("termguicolors") == 1 then
   vim.opt.termguicolors = true
 end
 
 vim.opt.syntax = "enable"
--- vim.cmd "colorscheme gruvbox"
-vim.cmd "colorscheme tokyonight"
+vim.cmd "colorscheme gruvbox"
+--- vim.cmd "colorscheme tokyonight"
 
 -- Hybrid line numbers
 vim.opt.number = true
