@@ -9,6 +9,7 @@ require('brennon.lspconfig')
 require('brennon.go')
 require('brennon.telescope')
 require('brennon.lualine')
+require('brennon.gitsigns')
 require('brennon.notical')
 
 if vim.fn.has("termguicolors") == 1 then
@@ -22,7 +23,6 @@ vim.cmd "colorscheme gruvbox"
 -- Hybrid line numbers
 vim.opt.number = true
 vim.opt.relativenumber = true
-vim.opt.signcolumn = "number"
 
 -- Show diagnostic and git changes in the number gutter instead of its own custom gutter
 vim.opt.signcolumn = "number"

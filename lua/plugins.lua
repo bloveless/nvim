@@ -70,6 +70,11 @@ require('packer').startup(function(use)
   use 'folke/tokyonight.nvim'
   use 'fladson/vim-kitty'
 
+  use {
+    'lewis6991/gitsigns.nvim',
+    tag = 'release',
+  }
+
   use '~/Projects/notical.nvim'
 end)
 
