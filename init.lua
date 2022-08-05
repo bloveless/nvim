@@ -24,8 +24,7 @@ vim.cmd "colorscheme gruvbox"
 vim.opt.number = true
 vim.opt.relativenumber = true
 
--- Show diagnostic and git changes in the number gutter instead of its own custom gutter
-vim.opt.signcolumn = "number"
+vim.opt.signcolumn = "yes"
 
 -- Enable powerline fonts for airline
 vim.g.airline_powerline_fonts = 1
