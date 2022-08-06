@@ -39,22 +39,27 @@ require('packer').startup(function(use)
     }
   }
 
-  use { 'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
-  use 'WhoIsSethDaniel/mason-tool-installer.nvim'
-  use 'neovim/nvim-lspconfig'
+  use {
+    'VonHeikemen/lsp-zero.nvim',
+    requires = {
+      -- LSP Support
+      {'neovim/nvim-lspconfig'},
+      {'williamboman/mason.nvim'},
+      {'williamboman/mason-lspconfig.nvim'},
 
-  -- Auto-completion
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'hrsh7th/cmp-cmdline'
+      -- Autocompletion
+      {'hrsh7th/nvim-cmp'},
+      {'hrsh7th/cmp-buffer'},
+      {'hrsh7th/cmp-path'},
+      {'saadparwaiz1/cmp_luasnip'},
+      {'hrsh7th/cmp-nvim-lsp'},
+      {'hrsh7th/cmp-nvim-lua'},
 
-  -- For luasnip users.
-  use 'L3MON4D3/LuaSnip'
-  use 'saadparwaiz1/cmp_luasnip'
+      -- Snippets
+      {'L3MON4D3/LuaSnip'},
+      {'rafamadriz/friendly-snippets'},
+    }
+  }
 
   use 'tpope/vim-surround'
   use 'tpope/vim-obsession'
@@ -67,13 +72,14 @@ require('packer').startup(function(use)
     requires = { 'kyazdani42/nvim-web-devicons', opt = true }
   }
 
-  use 'folke/tokyonight.nvim'
   use 'fladson/vim-kitty'
 
   use {
     'lewis6991/gitsigns.nvim',
     tag = 'release',
   }
+
+  use 'hashivim/vim-terraform'
 
   use '~/Projects/notical.nvim'
 end)

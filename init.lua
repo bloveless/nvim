@@ -3,9 +3,10 @@ vim.g.mapleader = ' '
 
 require('plugins')
 require('brennon.globals')
-require('brennon.cmp')
-require('brennon.mason')
-require('brennon.lspconfig')
+-- require('brennon.cmp')
+-- require('brennon.mason')
+-- require('brennon.lspconfig')
+require('brennon.lsp-zero')
 require('brennon.go')
 require('brennon.telescope')
 require('brennon.lualine')
@@ -31,9 +32,9 @@ vim.g.airline_powerline_fonts = 1
 
 -- Default spaces instead of tabs
 vim.opt.expandtab = true
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.softtabstop = 2
 
 -- Show whitespace characters
 vim.opt.list = true
@@ -45,7 +46,7 @@ vim.opt.listchars = {tab = '>-', lead = '.', trail = '~', precedes = '<', extend
 -- solutions
 vim.cmd [[autocmd BufWritePre * :%s/\s\+$//e]]
 
-vim.keymap.set('n', '<leader>pv', '<cmd>Explore<cr>')
+vim.keymap.set('n', '<leader>ex', '<cmd>Explore<cr>')
 
 -- Open new splits on the right and below the current buffer by default
 vim.opt.splitright = true
